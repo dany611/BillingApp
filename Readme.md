@@ -53,7 +53,7 @@ npm install -g wrangler
 
    ```bash
    git clone https://github.com/dany611/BillingApp
-   cd app
+   cd
    ```
 
 2. **Install dependencies**:
