@@ -1,0 +1,29 @@
+{
+    "name": "billing-app",
+    "version": "1.0.0",
+    "description": "A billing app for a SaaS platform using Cloudflare Workers and TypeScript",
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "tsc",
+      "start": "wrangler dev",
+      "deploy": "wrangler publish"
+    },
+    "dependencies": {
+      "@cloudflare/workers-types": "^4.20230101.0", 
+      "typescript": "^4.9.5",
+      "node-fetch": "^2.6.1" 
+    },
+    "devDependencies": {
+      "@types/node": "^18.0.0",
+      "wrangler": "^3.0.0", 
+      "ts-node": "^10.0.0", 
+      "eslint": "^8.0.0", 
+      "prettier": "^2.0.0" 
+    },
+    "engines": {
+      "node": ">=14"
+    },
+    "author": "Your Name",
+    "license": "MIT"
+  }
+  

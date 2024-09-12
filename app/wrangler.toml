@@ -1,0 +1,21 @@
+name = "billing-app"
+type = "javascript"
+account_id = "your-account-id"
+workers_dev = true
+
+kv_namespaces = [
+  { binding = "KV_SUBSCRIPTION_DATA", id = "your-kv-id" }
+]
+
+# Define cron schedules
+[[triggers.crons]]
+schedule = "0 0 * * *" # This runs at midnight every day to generate invoices
+path = "/generate-invoice"
+
+[[triggers.crons]]
+schedule = "0 2 * * *" # This runs at 2 AM every day to retry failed payments
+path = "/retry-failed-payments"
+
+# Add environment variables
+[env.production]
+SENDGRID_API_KEY = "your-sendgrid-api-key"
