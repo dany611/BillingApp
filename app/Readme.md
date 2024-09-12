@@ -13,7 +13,7 @@ This project implements a **SaaS Billing System** using **Cloudflare Workers**. 
 ## Project Structure
 
 ```bash
-billing-app/
+app/
 │
 ├── src/
 │   ├── handlers/
@@ -52,8 +52,8 @@ npm install -g wrangler
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/billing-app.git
-   cd billing-app
+   git clone https://github.com/dany611/BillingApp
+   cd app
    ```
 
 2. **Install dependencies**:
